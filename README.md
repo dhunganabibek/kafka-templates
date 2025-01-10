@@ -73,4 +73,11 @@ kafka-topics.sh
 kafka-topics.sh --list --bootstrap-server localhost:9092
 ```
 
-## 
+## Running Confluent Cloud Docker Image
+
+Cloning the docker image
+
+```bash
+docker pull confluentinc/cp-kafka:latest
+```
+
