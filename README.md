@@ -55,3 +55,22 @@ Replication
 - Each partition have one leader (decided by zookeeper) and multiple followers.
 - The leader handle read and write for the partition while followers replicate the data.
 - Replication factor is used for replication
+
+## creating a kafka Topics
+
+```bash
+kafka-topics.sh 
+    --create 
+    --topic test_topic
+    --bootstrap-server localhost:9092 
+    --partitions 10
+    --replication-factor 1
+```
+
+## listing the kafka Topics
+
+```bash
+kafka-topics.sh --list --bootstrap-server localhost:9092
+```
+
+## 
